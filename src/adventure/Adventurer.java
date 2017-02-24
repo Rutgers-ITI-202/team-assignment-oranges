@@ -1,16 +1,71 @@
 /*
+ * @author oranges
+ * @version 1.0
 An adventurer has:
-ï	A location (some room).
-ï	An inventory (the things being carried).  When the player executes the ìtake thingî command, the item should be added to the inventory.
-
+‚Ä¢	A location (some room).
+‚Ä¢	An inventory (the things being carried).  When the player executes the ‚Äútake thing‚Äù command, the item should be added to the inventory.
 An adventurer can:
-ï	Move from room to room.
-ï	Carry a number of objects.
-ï	Pick up, drop, look at, and use various objects.
-*/
+‚Ä¢	Move from room to room.
+‚Ä¢	Carry a number of objects.
+‚Ä¢	Pick up, drop, look at, and use various objects.
+ */
 
 package adventure;
 
-public class Adventurer {
+import java.util.ArrayList;
 
+public class Adventurer {
+	
+	//import arraylist called backpack that will be called in TextAdventure
+	public static ArrayList<String> backpack = new ArrayList<String>();
+
+	private boolean bronzekey = false; // all the items that you will need for the game 
+	private boolean silverkey = false;
+	private boolean goldkey = false;
+	private boolean flashlight = false;
+	private boolean knife = false;
+	
+	private boolean watch = false;
+	
+	//create a player identity
+	String name;
+	public void setName(String n){
+	name = n;
+	}
+	public String getName(){
+	return name;
+	}
+	
+	
+	public boolean bronzekey(){
+		return true ;
+	}
+	
+	public boolean silverkey(){
+		return true;
+	}
+	public boolean goldkey(){
+		return true;
+	}
+	public boolean flashlight(){
+		return true;
+	}
+	public boolean knife(){
+		return true;
+	}
+	public boolean watch(){
+		return true;
+	}
+	
 }
+
+
+	
+
+	
+	
+    
+
+
+
+
