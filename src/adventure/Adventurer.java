@@ -1,6 +1,8 @@
 /*
  * @author oranges
  * @version 1.0
+ * @since 04/28/17
+
 An adventurer has:
 •	A location (some room).
 •	An inventory (the things being carried).  When the player executes the “take thing” command, the item should be added to the inventory.
@@ -35,7 +37,10 @@ public class Adventurer {
 	public String getName(){
 	return name;
 	}
-	
+	/**
+	 * These statements below activate Bronze key, SilverKey, GoldKey, Flashlight, Knife, Watch
+	 * @return
+	 */
 	
 	public boolean bronzekey(){
 		return true ;
@@ -65,7 +70,3 @@ public class Adventurer {
 	
 	
     
-
-
-
-
